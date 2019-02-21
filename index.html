@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
+    <script src="main.js"></script>
+</head>
+
+<body> <br><br><br>
+    <nav>
+        <button>Search eBay</button>
+        <button>My Watch List</button>
+        <button>Logout</button>
+    </nav>
+    <h3>Nav</h3>
+    Click on "Search eBay" -----> Search Page <br>
+    Click on "My Watch List" -----> My Watch List page <br>
+    Click on "Sign Out" ------> Login Page
+    <h3>Screen Name: Landing Page</h3>
+    Click "Create Accout" ----> Create Account Page <br>
+    Click "Login Account" ----> Login Page <br>
+
+    <section>
+        <header>
+            <h1>Welcome to eTrack!</h1>
+            <h3>eTrack allows you to track products and monitor price changes for products on eBay. <br>
+                Search for a product on eBay, save it to your profile, and set a target price. <br> If the price drops
+                to the alert price, eTrack will send you a notification!
+            </h3>
+        </header>
+        <main>
+            <button>Create Account</button>
+            <button>Login</button>
+        </main>
+    </section>
+
+    <div>
+        <h3>Screen Name: Create Account</h3>
+        Enter valid username/password ----> Login Page <br>
+        Enter invalid username ---> Error message prompting user to provide valid username <br>
+        Enter invalid password ---> Error message prompting user to provide valid password
+        <section>
+            <header>
+                <h2>Create Account</h2>
+            </header>
+            <form action="create-account">
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Password">
+                <input type="submit" value="Create Account">
+            </form>
+            <h3>Demo Account</h3>
+            <p>Username: testuser Password: abcd1234</p>
+        </section>
+    </div>
+
+    <div>
+        <h3>Screen Name: Login</h3>
+        Enter valid username/password ----> Home Page <br>
+        Enter invalid username ---> Error message prompting user to provide valid username <br>
+        Enter invalid password ---> Error message prompting user to provide valid password <br>
+        <section>
+            <header>
+                <h2>Account Login</h2>
+            </header>
+            <form action="create-account">
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Password">
+                <input type="submit" value="Login">
+            </form>
+            <h3>Demo Account</h3>
+            <p>Username: testuser Password: abcd1234</p>
+        </section>
+    </div>
+
+    <div>
+        <h3>Screen Name: Search Page</h3>
+        Enter a valid search ----> display search Results <br>
+        Enter invalid search -----> error message prompting a valid search <br>
+        Click on "Save to Watch List" ----> Saves product to watch List <br>
+        Click on product -----> Link to product listing on eBay
+        <section>
+            <header>
+                <h1>Welcome to eTrack!</h1>
+            </header>
+            <form>
+                <input type="text" placeholder="Batman Animated Series">
+                <input type="submit" value="Search eBay"><br>
+                <input type="radio">New
+                <input type="radio">Preowned
+            </form>
+        </section>
+        <section>
+            <h2>Showing Results for: "Batman Animated Series"</h2>
+            <ul>
+                <button>Previous Page</button> <button>Next Page</button>
+                <li> <em>***IMAGE FOR PRODUCT***</em> <br>
+                    Batman Animated Series vol. 1<br>
+                    Price: $34<br>
+                    Condition: Brand New
+                    <form action="save">
+                        <input type="submit" value="Save to Watch List">
+                    </form>
+                </li>
+                <li> <em>***IMAGE FOR PRODUCT***</em> <br>
+                    Batman Animated Series vol. 2<br>
+                    Price: $45<br>
+                    Condition: Pre-owned
+                    <form action="save">
+                        <input type="submit" value="Save to Watch List">
+                    </form>
+                </li>
+                <li> <em>***IMAGE FOR PRODUCT***</em> <br>
+                    Batman Animated Series vol. 1-3<br>
+                    Price: $95<br>
+                    Condition: Brand New
+                    <form action="save">
+                        <input type="submit" value="Save to Watch List">
+                    </form>
+                </li>
+                <li> <em>***IMAGE FOR PRODUCT***</em> <br>
+                    Batman Animated Complete Series<br>
+                    Price: $130<br>
+                    Condition: Brand New
+                    <form action="save">
+                        <input type="submit" value="Save to Watch List">
+                    </form>
+                </li>
+                <li> <em>***IMAGE FOR PRODUCT***</em> <br>
+                    Batman Animated Series vol. 4<br>
+                    Price: $40<br>
+                    Condition: Pre-owned
+                    <form action="save">
+                        <input type="submit" value="Save to Watch List">
+                    </form>
+                </li>
+            </ul>
+            <button>Previous Page</button> <button>Next Page</button>
+        </section>
+    </div>
+
+    <div>
+        <h3>Screen Name: Watch List</h3>
+        Click on product ----> Link to product listing on eBay <br>
+        Click on "Edit" ------> Edit notification email <br>
+        Submit "Set Price" ----> Sets new target price <br>
+
+        <section>
+            <header>
+                <h1>Your Watch List</h1>
+                <p>Notification Email: <em>batmanfan1989@yahoo.com</em> <button>Edit</button></p>
+            </header>
+        </section>
+
+        <section>
+            <h3>Target Price Difference: $4</h3>
+            <em>***IMAGE FOR PRODUCT***</em> <br>
+            Batman Animated Series vol. 1<br>
+            Current Price: $34<br>
+            Condition: Pre-owned
+            <form action="save">
+                Target Price: $ <input type="text" placeholder="30"> <input type="submit" value="Set Price">
+            </form>
+        </section>
+
+        <section>
+            <h3>Target Price Difference: $16</h3>
+            <em>***IMAGE FOR PRODUCT***</em> <br>
+            Batman Animated Series vol. 1-2<br>
+            Current Price: $56<br>
+            Condition: Brand New
+            <form action="save">
+                Target Price: $ <input type="text" placeholder="40"> <input type="submit" value="Set Price">
+            </form>
+        </section>
+
+        <section>
+                <h3>Target Price Difference: $6</h3>
+                <em>***IMAGE FOR PRODUCT***</em> <br>
+                Batman Animated Series vol. 2<br>
+                Current Price: $26<br>
+                Condition: Brand New
+                <form action="save">
+                    Target Price: $ <input type="text" placeholder="20"> <input type="submit" value="Set Price">
+                </form>
+        </section>
+    </div>
